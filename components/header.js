@@ -34,11 +34,34 @@ function Header() {
           </Text>
         </Pane>
 
-        <Pane>
-          <Text>
+        <Pane
+          alignItems="center"
+          display="flex"
+          marginTop={16}
+        >
+          <Text
+            is="a"
+            href="/"
+            textDecoration="none"
+            fontSize={28}
+            color="rgba(0,0,0,0.87)"
+            // lineHeight={1.2}
+            // fontWeight={400}
+            // fontFamily="'Playfair Display', serif;"
+            marginRight={24}
+          >
             About
           </Text>
-          <Text>
+          <Text
+            is="a"
+            href="/team"
+            textDecoration="none"
+            fontSize={28}
+            color="rgba(0,0,0,0.87)"
+            // lineHeight={1.2}
+            // fontWeight={400}
+            // fontFamily="'Playfair Display', serif;"
+          >
             Team
           </Text>
         </Pane>

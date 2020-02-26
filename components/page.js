@@ -1,5 +1,7 @@
 import { Pane } from 'evergreen-ui'
 import Head from 'next/head'
+import Header from './header'
+import Footer from './footer'
 
 function Page(props) {
   return (
@@ -11,14 +13,26 @@ function Page(props) {
       <Pane
         marginLeft="auto"
         marginRight="auto"
-        maxWidth={1200}
+        maxWidth={900}
         marginTop={24}
         // display="flex"
         alignItems="center"
         justifyContent="center"
         // border="default"
       >
-        {props.children}
+        <Pane
+          minHeight="calc(100vh - 70px)"
+        >
+        <Header />
+         <Pane
+          padding={16}
+         >
+          {props.children}
+         </Pane>
+
+        </Pane>
+
+        <Footer />
       </Pane>
     </>
   )
